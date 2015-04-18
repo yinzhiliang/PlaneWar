@@ -8,27 +8,28 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 
+
 public class MyPlane extends GameObject {
 	
-	/* é£æœºå›¾ç‰‡ */
+	/* ·É»úÍ¼Æ¬ */
 	private Bitmap mMyPlane;
-	/* å°¾éƒ¨ç«ç„°å›¾ç‰‡ */
+	/* Î²²¿»ğÑæÍ¼Æ¬ */
     private Bitmap mPlaneFire;
-	/* ä¸­å¿ƒXåæ ‡*/
+	/* ÖĞĞÄX×ø±ê*/
 	private float mCenterX;
-	/* ä¸­å¿ƒYåæ ‡ */
+	/* ÖĞĞÄY×ø±ê */
 	private float mCenterY;
-	/* ç«ç„°é«˜åº¦ */
+	/* »ğÑæ¸ß¶È */
 	private int mFireHeight;
-	/* å‘å°„å‡ºå»çš„å­å¼¹ */
+	/* ·¢Éä³öÈ¥µÄ×Óµ¯ */
 	private List<GameObject> mBullets;
-	/* ä¸»ç•Œé¢ */
+	/* Ö÷½çÃæ */
 	private MainView mMainView;
 
 	/**
-	 * æ„é€ å‡½æ•°
-	 * @param aMainView ä¸»ç•Œé¢
-	 * @param aResources èµ„æº
+	 * ¹¹Ôìº¯Êı
+	 * @param aMainView Ö÷½çÃæ
+	 * @param aResources ×ÊÔ´
 	 */
 	MyPlane(MainView aMainView, Resources aResources) {
 		super(aResources);
@@ -71,7 +72,7 @@ public class MyPlane extends GameObject {
 	}
 
 	/**
-	 * åˆå§‹åŒ–å­å¼¹
+	 * ³õÊ¼»¯×Óµ¯
 	 */
 	public void initButtle() {
 		for (GameObject obj : mBullets) {
@@ -83,9 +84,9 @@ public class MyPlane extends GameObject {
 	}
 
 	/**
-	 * å°„å‡»
+	 * Éä»÷
 	 * @param canvas Canvas
-	 * @param planes é£æœº
+	 * @param planes ·É»ú
 	 */
 	public void shoot(Canvas canvas, List<GameObject> mPlanes) {
 		for (GameObject obj : mBullets) {
@@ -117,7 +118,7 @@ public class MyPlane extends GameObject {
 	}
 
 	/**
-	 * è·å–mSpeed
+	 * »ñÈ¡mSpeed
 	 * @return mSpeed
 	 */
 	public int getSpeed() {
@@ -125,16 +126,16 @@ public class MyPlane extends GameObject {
 	}
 
 	/**
-	 * è·å–ä¸­å¿ƒXåæ ‡
-	 * @return ä¸­å¿ƒXåæ ‡
+	 * »ñÈ¡ÖĞĞÄX×ø±ê
+	 * @return ÖĞĞÄX×ø±ê
 	 */
 	public float getCenterX() {
 		return mCenterX;
 	}
 
 	/**
-	 * è®¾ç½®ä¸­å¿ƒXåæ ‡
-	 * @param aCenterX ä¸­å¿ƒXåæ ‡
+	 * ÉèÖÃÖĞĞÄX×ø±ê
+	 * @param aCenterX ÖĞĞÄX×ø±ê
 	 */
 	public void setCenterX(float aCenterX) {
 		this.mCenterX = aCenterX;
@@ -142,16 +143,16 @@ public class MyPlane extends GameObject {
 	}
 
 	/**
-	 * è·å–ä¸­å¿ƒYåæ ‡
-	 * @return ä¸­å¿ƒYåæ ‡
+	 * »ñÈ¡ÖĞĞÄY×ø±ê
+	 * @return ÖĞĞÄY×ø±ê
 	 */
 	public float getCenterY() {
 		return mCenterY;
 	}
 
 	/**
-	 * è®¾ç½®ä¸­å¿ƒYåæ ‡
-	 * @param aCenterY ä¸­å¿ƒYåæ ‡
+	 * ÉèÖÃÖĞĞÄY×ø±ê
+	 * @param aCenterY ÖĞĞÄY×ø±ê
 	 */
 	public void setCenterY(float aCenterY) {
 		this.mCenterY = aCenterY;
