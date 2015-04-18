@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_centerInParent="true"
+        android:text="@string/btn_start"
+        android:textSize="@dimen/button_text_size"
+        />
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_quit"
+        android:textSize="@dimen/button_text_size"
+        />
+
+</RelativeLayout>
